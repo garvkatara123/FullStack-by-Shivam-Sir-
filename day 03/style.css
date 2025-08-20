@@ -1,0 +1,31 @@
+.div img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+*{
+    background-color: #c7c0c0;
+}
+
+h1 {
+    /* background-color: green; */
+}
+/* #head{
+    background-color: black;
+} */
+
+.links {
+    padding: 10px;
+    border-radius: 5px;
+}
+.linkdin:hover {
+    background-color: yellow;
+}
+.linkdin:visited {
+    background-color: green;
+}
+
+/* # agr h1 h2 use kiye h or sb pr same css ka use krna h to group selector ka use kr ke daal skte h jese je 
+h1, h2{
+    color: red;
+} */

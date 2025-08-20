@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Form</title>
+    </head>
+    <body>
+        <h1>Register Here</h1>
+        <form action="submit_registration.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"
+                required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender"
+                value="gender">Male<br><br>
+            <input type="radio" id="female" name="gender"
+                value="gender">Female<br><br>
+
+            <label for="dob">Date Of Birth</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value>--Select Country--</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+            </select><br><br>
+
+            <label for="skills">Skills:</label><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>html<br><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>CSS<br><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>Java<br><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>JavaScript<br><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>MongoDB<br><br>
+            <input type="checkbox" id="skills" name="skills"
+                required>PHP<br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
