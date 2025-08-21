@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Job Application Form</h2>
+    <form>
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" placeholder="10 digit phone number" pattern="[0-9]{10}" required>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Details</legend>
+
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position" placeholder="Enter job title" required>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" placeholder="e.g., 3" min="0" max="50" required>
+
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea id="cover-letter" name="cover-letter" rows="5" cols="40" placeholder="Write your message here..." required></textarea>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Availability</legend>
+
+        <label for="start-date">Available Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <p>Willing to Relocate?</p>
+        <label><input type="radio" name="relocate" value="yes" required> Yes</label>
+        <label><input type="radio" name="relocate" value="no"> No</label>
+
+      </fieldset>
+
+      <div class="submit-button">
+        <button type="submit">Submit Application</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
